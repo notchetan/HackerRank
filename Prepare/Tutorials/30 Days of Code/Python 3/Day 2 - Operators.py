@@ -15,15 +15,17 @@ import sys
 #  3. INTEGER tax_percent
 #
 
+
 def solve(meal_cost, tip_percent, tax_percent):
     # Write your code here
-    tip_cost = meal_cost * (tip_percent/100)
-    tax_cost = meal_cost * (tax_percent/100)
-    
+    tip_cost = meal_cost * (tip_percent / 100)
+    tax_cost = meal_cost * (tax_percent / 100)
+
     total_cost = round(meal_cost + tip_cost + tax_cost)
     print(total_cost)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     meal_cost = float(input().strip())
 
     tip_percent = int(input().strip())
